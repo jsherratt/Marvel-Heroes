@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		D4AE875C1DBEBF740018222B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE875B1DBEBF740018222B /* main.m */; };
 		D4AE875F1DBEBF740018222B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE875E1DBEBF740018222B /* AppDelegate.m */; };
-		D4AE87621DBEBF740018222B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE87611DBEBF740018222B /* ViewController.m */; };
 		D4AE87651DBEBF740018222B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AE87631DBEBF740018222B /* Main.storyboard */; };
 		D4AE87671DBEBF740018222B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4AE87661DBEBF740018222B /* Assets.xcassets */; };
 		D4AE876A1DBEBF740018222B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AE87681DBEBF740018222B /* LaunchScreen.storyboard */; };
 		D4AE87751DBEBF740018222B /* Marvel_HeroesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE87741DBEBF740018222B /* Marvel_HeroesTests.m */; };
 		D4AE87801DBEBF740018222B /* Marvel_HeroesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE877F1DBEBF740018222B /* Marvel_HeroesUITests.m */; };
+		D4AE87901DBEC2600018222B /* JMHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE878F1DBEC2600018222B /* JMHCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		D4AE875B1DBEBF740018222B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4AE875D1DBEBF740018222B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4AE875E1DBEBF740018222B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D4AE87601DBEBF740018222B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D4AE87611DBEBF740018222B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D4AE87641DBEBF740018222B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4AE87661DBEBF740018222B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4AE87691DBEBF740018222B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		D4AE877B1DBEBF740018222B /* Marvel-HeroesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marvel-HeroesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4AE877F1DBEBF740018222B /* Marvel_HeroesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Marvel_HeroesUITests.m; sourceTree = "<group>"; };
 		D4AE87811DBEBF740018222B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4AE878E1DBEC2600018222B /* JMHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHCollectionViewController.h; sourceTree = "<group>"; };
+		D4AE878F1DBEC2600018222B /* JMHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +103,11 @@
 			children = (
 				D4AE875D1DBEBF740018222B /* AppDelegate.h */,
 				D4AE875E1DBEBF740018222B /* AppDelegate.m */,
-				D4AE87601DBEBF740018222B /* ViewController.h */,
-				D4AE87611DBEBF740018222B /* ViewController.m */,
+				D4AE878E1DBEC2600018222B /* JMHCollectionViewController.h */,
+				D4AE878F1DBEC2600018222B /* JMHCollectionViewController.m */,
 				D4AE87631DBEBF740018222B /* Main.storyboard */,
 				D4AE87661DBEBF740018222B /* Assets.xcassets */,
-				D4AE87681DBEBF740018222B /* LaunchScreen.storyboard */,
-				D4AE876B1DBEBF740018222B /* Info.plist */,
+				D4AE878D1DBEBF8B0018222B /* Extra */,
 				D4AE875A1DBEBF740018222B /* Supporting Files */,
 			);
 			path = "Marvel-Heroes";
@@ -138,6 +137,15 @@
 				D4AE87811DBEBF740018222B /* Info.plist */,
 			);
 			path = "Marvel-HeroesUITests";
+			sourceTree = "<group>";
+		};
+		D4AE878D1DBEBF8B0018222B /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				D4AE87681DBEBF740018222B /* LaunchScreen.storyboard */,
+				D4AE876B1DBEBF740018222B /* Info.plist */,
+			);
+			name = Extra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4AE87621DBEBF740018222B /* ViewController.m in Sources */,
+				D4AE87901DBEC2600018222B /* JMHCollectionViewController.m in Sources */,
 				D4AE875F1DBEBF740018222B /* AppDelegate.m in Sources */,
 				D4AE875C1DBEBF740018222B /* main.m in Sources */,
 			);

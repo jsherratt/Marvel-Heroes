@@ -10,12 +10,19 @@
 
 @implementation Hero
 
-+(NSDictionary *)defaultPropertyValues {
-    return @{@"isFavorite" : @NO};
-}
-
 +(NSString *)primaryKey {
     return @"id";
+}
+
+//Other way
+-(void)initWithDict:(NSDictionary *)dict{
+    
+    self.name = [dict objectForKey:@"name"];
+    self.description = [dict objectForKey:@"description"];
+    
+    NSDictionary *thumbnail = [dict objectForKey:@"thumbnail"];
+    self.path = [thumbnail objectForKey:@"path"];
+
 }
 
 @end

@@ -12,8 +12,11 @@
 @interface Hero : RLMObject
 
 @property NSString *name;
-@property NSString *overview;
-@property NSString *poster_path;
+@property NSString *description;
+@property NSString *path;
 @property NSInteger id;
+
+//Other way
+-(void)initWithDict: (NSDictionary *)dict;
 
 @end

@@ -25,7 +25,8 @@
         if (data != nil) {
             
             NSDictionary *JSONDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-            NSArray *JSONArray = [JSONDict valueForKey:@"results"];
+            NSDictionary *JSONArrayDataDict = [JSONDict objectForKey:@"data"];
+            NSArray *JSONArray = [JSONArrayDataDict valueForKey:@"results"];
             
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 

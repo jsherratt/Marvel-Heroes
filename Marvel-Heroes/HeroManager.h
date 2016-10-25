@@ -12,6 +12,9 @@
 
 @interface HeroManager : NSObject
 
--(void)fetchHeroesWithPage:(NSUInteger) page completion:(void(^)(RLMResults<Hero *> *heroArray, NSError *error)) completion;
+-(void)fetchHeroesWithOffset:(NSUInteger) offset completion:(void(^)(RLMResults<Hero *> *heroArray, NSError *error)) completion;
+
+//Other way
+-(void)fetchHeroesWithOffsett:(NSUInteger) offset completion:(void(^)(NSArray *heroArray, NSError *error)) completion;
 
 @end

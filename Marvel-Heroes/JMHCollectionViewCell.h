@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Hero.h"
+#import "Haneke.h"
 
 @interface JMHCollectionViewCell : UICollectionViewCell
 
-@property (nonnull) IBOutlet UIImageView *heroImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *heroImageView;
 
--(void)configureCellWithHero:(Hero *)hero;
+-(void)configureCellWithHero: (Hero *)hero;
 
 @end

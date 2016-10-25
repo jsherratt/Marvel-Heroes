@@ -10,13 +10,21 @@
 
 @implementation JMHCollectionViewCell
 
+#pragma mark <Cell reusing>
+
+-(void)prepareForReuse {
+    
+    [self.heroImageView hnk_cancelSetImage];
+    self.heroImageView.image = nil;
+}
+
 #pragma mark <Cell configuration>
 
 -(void)configureCellWithHero:(Hero *)hero {
     
-    NSString *url = [NSString stringWithFormat:@"%@/%@", hero.poster_path, @"standard_medium.jpg"];
+    NSString *url = [NSString stringWithFormat:@"%@/%@", hero.thumbnail[@"path"], @"standard_medium.jpg"];
     
-    //[self.heroImageView hnk_setImageFromURL:[NSURL URLWithString:url]];
+    [self.heroImageView hnk_setImageFromURL:[NSURL URLWithString:url]];
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "JMHCollectionViewController.h"
+#import <SVPullToRefresh/SVPullToRefresh.h>
 
 @interface JMHCollectionViewController ()
 
@@ -19,32 +20,72 @@ static NSString * const reuseIdentifier = @"MarvelHeroCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Register cell classes
-   // [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
+    //Customise collection view and navigation bar
     self.collectionView.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.topItem.title = @"Marvel Heroes";
     
+    //Initialise hero manager
+    self.manager = [[HeroManager alloc] init];
     
+    //Set initial offset
+    self.offset = 0;
+    
+    
+#pragma mark <Fetch initial data>
+//    [self.manager fetchHeroesWithOffset:self.offset completion:^(RLMResults<Hero *> *heroArray, NSError *error) {
+//        
+//        if (error == nil) {
+//            
+//            self.heroes = heroArray;
+//            NSLog(@"Yay %@", heroArray);
+//            NSLog(@"Count %lu",heroArray.count);
+//            //self.offset += 20;
+//            [self.collectionView reloadData];
+//            
+//        } else {
+//            [self showAlertWithTitle:@"There was an error" andMessage:error.localizedDescription];
+//        }
+//        
+//    }];
+    
+    //Other way
+    [self.manager fetchHeroesWithOffsett:self.offset completion:^(NSArray *heroArray, NSError *error) {
+        
+        if (error == nil) {
+            
+            for (NSDictionary *heroDict in heroArray){
+                
+                //Create hero from dict
+                //Hero *hero = [[Hero alloc] initWithDict:heroDict];
+                
+                //Add each hero to array
+                //[_heroes addObject:hero];
+            }
+            
+            NSLog(@"Yay %@", heroArray);
+            NSLog(@"Count %lu",heroArray.count);
+            NSLog(@"First item in array %@",heroArray[0]);
+            [self.collectionView reloadData];
+            
+        } else {
+            [self showAlertWithTitle:@"There was an error" andMessage:error.localizedDescription];
+        }
+    }];
 }
 
 #pragma mark <UICollectionViewDataSource>
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
-}
-
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 1;
+    return self.heroes.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    JMHCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
-    cell.backgroundColor = [UIColor blackColor];
+    Hero *hero = self.heroes[indexPath.row];
+    [cell configureCellWithHero:hero];
     
     return cell;
 }
@@ -62,6 +103,17 @@ static NSString * const reuseIdentifier = @"MarvelHeroCell";
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
  }
+
+#pragma mark <UIAlertController>
+
+-(void)showAlertWithTitle:(NSString *)title andMessage:(NSString *)message {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+    [alertController addAction:okAction];
+    
+    [self presentViewController:alertController animated:true completion:nil];
+}
 
 
 

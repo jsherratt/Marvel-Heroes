@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D498AF7B1DBFE32700ABF743 /* JMHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D498AF7A1DBFE32700ABF743 /* JMHCollectionViewCell.m */; };
+		D498AF7E1DBFE59100ABF743 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = D498AF7D1DBFE59100ABF743 /* Hero.m */; };
+		D498AF811DBFE70100ABF743 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D498AF801DBFE70100ABF743 /* NetworkManager.m */; };
+		D498AF841DBFEA9000ABF743 /* HeroManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D498AF831DBFEA9000ABF743 /* HeroManager.m */; };
 		D4AE875C1DBEBF740018222B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE875B1DBEBF740018222B /* main.m */; };
 		D4AE875F1DBEBF740018222B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE875E1DBEBF740018222B /* AppDelegate.m */; };
 		D4AE87651DBEBF740018222B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AE87631DBEBF740018222B /* Main.storyboard */; };
@@ -35,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D498AF791DBFE32700ABF743 /* JMHCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHCollectionViewCell.h; sourceTree = "<group>"; };
+		D498AF7A1DBFE32700ABF743 /* JMHCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHCollectionViewCell.m; sourceTree = "<group>"; };
+		D498AF7C1DBFE59100ABF743 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		D498AF7D1DBFE59100ABF743 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		D498AF7F1DBFE70100ABF743 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		D498AF801DBFE70100ABF743 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		D498AF821DBFEA9000ABF743 /* HeroManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroManager.h; sourceTree = "<group>"; };
+		D498AF831DBFEA9000ABF743 /* HeroManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroManager.m; sourceTree = "<group>"; };
 		D4AE87571DBEBF740018222B /* Marvel-Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvel-Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4AE875B1DBEBF740018222B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4AE875D1DBEBF740018222B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +117,14 @@
 				D4AE875E1DBEBF740018222B /* AppDelegate.m */,
 				D4AE878E1DBEC2600018222B /* JMHCollectionViewController.h */,
 				D4AE878F1DBEC2600018222B /* JMHCollectionViewController.m */,
+				D498AF791DBFE32700ABF743 /* JMHCollectionViewCell.h */,
+				D498AF7A1DBFE32700ABF743 /* JMHCollectionViewCell.m */,
+				D498AF7F1DBFE70100ABF743 /* NetworkManager.h */,
+				D498AF801DBFE70100ABF743 /* NetworkManager.m */,
+				D498AF821DBFEA9000ABF743 /* HeroManager.h */,
+				D498AF831DBFEA9000ABF743 /* HeroManager.m */,
+				D498AF7C1DBFE59100ABF743 /* Hero.h */,
+				D498AF7D1DBFE59100ABF743 /* Hero.m */,
 				D4AE87631DBEBF740018222B /* Main.storyboard */,
 				D4AE87661DBEBF740018222B /* Assets.xcassets */,
 				D4AE878D1DBEBF8B0018222B /* Extra */,
@@ -282,8 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D498AF7E1DBFE59100ABF743 /* Hero.m in Sources */,
+				D498AF7B1DBFE32700ABF743 /* JMHCollectionViewCell.m in Sources */,
 				D4AE87901DBEC2600018222B /* JMHCollectionViewController.m in Sources */,
+				D498AF841DBFEA9000ABF743 /* HeroManager.m in Sources */,
 				D4AE875F1DBEBF740018222B /* AppDelegate.m in Sources */,
+				D498AF811DBFE70100ABF743 /* NetworkManager.m in Sources */,
 				D4AE875C1DBEBF740018222B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +540,7 @@
 				D4AE87861DBEBF740018222B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4AE87871DBEBF740018222B /* Build configuration list for PBXNativeTarget "Marvel-HeroesTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +549,7 @@
 				D4AE87891DBEBF740018222B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4AE878A1DBEBF740018222B /* Build configuration list for PBXNativeTarget "Marvel-HeroesUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +558,7 @@
 				D4AE878C1DBEBF740018222B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

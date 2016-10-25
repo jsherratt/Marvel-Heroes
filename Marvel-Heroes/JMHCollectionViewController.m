@@ -25,6 +25,7 @@ static NSString * const reuseIdentifier = @"MarvelHeroCell";
     self.collectionView.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.topItem.title = @"Marvel Heroes";
     
+    
 }
 
 #pragma mark <UICollectionViewDataSource>

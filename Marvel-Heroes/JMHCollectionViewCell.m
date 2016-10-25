@@ -10,4 +10,13 @@
 
 @implementation JMHCollectionViewCell
 
+#pragma mark <Cell configuration>
+
+-(void)configureCellWithHero:(Hero *)hero {
+    
+    NSString *url = [NSString stringWithFormat:@"%@/%@", hero.poster_path, @"standard_medium.jpg"];
+    
+    //[self.heroImageView hnk_setImageFromURL:[NSURL URLWithString:url]];
+}
+
 @end

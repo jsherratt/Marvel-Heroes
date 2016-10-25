@@ -10,13 +10,24 @@
 
 @implementation HeroManager
 
--(void)fetchHeroesWithPage:(NSUInteger)page completion:(void (^)(Hero *movieArray, NSError *error))completion {
+-(void)fetchHeroesWithPage:(NSUInteger) page completion:(void (^)(RLMResults<Hero *> *heroArray, NSError *error)) completion {
     
     [NetworkManager requestEndpoint:[NSString stringWithFormat:@""] completion:^(NSArray *JSONArray, NSError *error) {
         
         if (error == nil) {
             
+            RLMRealm *realm = [RLMRealm defaultRealm];
             
+            for (NSDictionary *jsonDict in JSONArray) {
+                
+                [realm transactionWithBlock:^{
+                    
+                    [Hero createOrUpdateInRealm:realm withValue:jsonDict];
+                    
+                }];
+                
+                completion([Hero allObjects], nil);
+            }
             
         }else {
             completion(nil, error);

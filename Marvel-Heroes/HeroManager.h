@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "NetworkManager.h"
+#import <Realm/Realm.h>
 
 @interface HeroManager : NSObject
 
--(void)fetchHeroesWithPage:(NSUInteger)page completion:(void(^)(Hero *heroArray, NSError *error))completion;
+-(void)fetchHeroesWithPage:(NSUInteger) page completion:(void(^)(RLMResults<Hero *> *heroArray, NSError *error)) completion;
 
 @end

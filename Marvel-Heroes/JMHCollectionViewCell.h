@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Hero.h"
 
 @interface JMHCollectionViewCell : UICollectionViewCell
 
 @property (nonnull) IBOutlet UIImageView *heroImageView;
 
-
+-(void)configureCellWithHero:(Hero *)hero;
 
 @end

@@ -10,4 +10,12 @@
 
 @implementation Hero
 
++(NSDictionary *)defaultPropertyValues {
+    return @{@"isFavorite" : @NO};
+}
+
++(NSString *)primaryKey {
+    return @"id";
+}
+
 @end

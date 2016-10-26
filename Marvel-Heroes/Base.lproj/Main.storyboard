@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AEO-ST-RHU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AEO-ST-RHU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,27 +14,30 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Gsb-W1-b4L">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Yz-85-6QC">
+                        <color key="backgroundColor" red="0.058823529411764705" green="0.082352941176470587" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="2" id="7Yz-85-6QC">
                             <size key="itemSize" width="120" height="120"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MarvelHeroCell" id="4te-YG-xDJ" customClass="JMHCollectionViewCell">
-                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                <rect key="frame" x="2" y="2" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r2a-gW-dLO">
-                                            <frame key="frameInset" width="120" height="120"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r2a-gW-dLO"/>
                                     </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="r2a-gW-dLO" firstAttribute="leading" secondItem="4te-YG-xDJ" secondAttribute="leading" id="esO-q2-ZJ2"/>
+                                    <constraint firstItem="r2a-gW-dLO" firstAttribute="top" secondItem="4te-YG-xDJ" secondAttribute="top" id="haR-gS-ih2"/>
+                                    <constraint firstAttribute="trailing" secondItem="r2a-gW-dLO" secondAttribute="trailing" id="pgJ-lK-Kwc"/>
+                                    <constraint firstAttribute="bottom" secondItem="r2a-gW-dLO" secondAttribute="bottom" id="zIP-Lh-jkZ"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="heroImageView" destination="r2a-gW-dLO" id="5DW-gb-9Ng"/>
                                 </connections>
@@ -49,6 +53,122 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIw-1x-Oui" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1772" y="674"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="BnI-V9-p8A">
+            <objects>
+                <viewController storyboardIdentifier="DetailView" id="JO8-Z1-P6h" customClass="JMHDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ls2-rw-FIR"/>
+                        <viewControllerLayoutGuide type="bottom" id="ULO-de-ZLm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GXK-wq-9cT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FLL-ta-edj">
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwa-NO-NPM">
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHv-of-zwU">
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Xwk-ty-w6b"/>
+                                    <constraint firstAttribute="height" constant="40" id="fwz-Qu-2YV"/>
+                                </constraints>
+                                <state key="normal" title="Hero Wiki">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.08235294118" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="wikiBtnTapped:" destination="JO8-Z1-P6h" eventType="touchUpInside" id="P3r-4d-3he"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ah-Pn-Ge5">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="SWT-tp-ZFp"/>
+                                </constraints>
+                                <color key="textColor" red="0.058823529409999999" green="0.08235294118" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tj1-Sy-VCI">
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Hero Details">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.08235294118" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="detailBtnTapped:" destination="JO8-Z1-P6h" eventType="touchUpInside" id="FiM-AY-Xdm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.058823529409999999" green="0.08235294118" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FLL-ta-edj" firstAttribute="leading" secondItem="GXK-wq-9cT" secondAttribute="leadingMargin" constant="21" id="1Mh-IJ-dnY"/>
+                            <constraint firstItem="FLL-ta-edj" firstAttribute="centerX" secondItem="GXK-wq-9cT" secondAttribute="centerX" id="83f-BG-pcA"/>
+                            <constraint firstItem="6Ah-Pn-Ge5" firstAttribute="trailing" secondItem="FLL-ta-edj" secondAttribute="trailing" id="8xV-rd-ZCo"/>
+                            <constraint firstItem="tj1-Sy-VCI" firstAttribute="leading" secondItem="Vwa-NO-NPM" secondAttribute="leading" id="G4a-Oz-WNV"/>
+                            <constraint firstItem="tj1-Sy-VCI" firstAttribute="height" secondItem="NHv-of-zwU" secondAttribute="height" id="TSH-vy-QGF"/>
+                            <constraint firstItem="FLL-ta-edj" firstAttribute="top" secondItem="Ls2-rw-FIR" secondAttribute="bottom" constant="8" id="Unb-IO-nG2"/>
+                            <constraint firstItem="6Ah-Pn-Ge5" firstAttribute="top" secondItem="FLL-ta-edj" secondAttribute="bottom" constant="-150" id="X3T-Sk-MTf"/>
+                            <constraint firstItem="ULO-de-ZLm" firstAttribute="top" secondItem="NHv-of-zwU" secondAttribute="bottom" constant="30" id="XXa-l3-nsS"/>
+                            <constraint firstItem="tj1-Sy-VCI" firstAttribute="top" secondItem="NHv-of-zwU" secondAttribute="top" id="Yho-Al-frk"/>
+                            <constraint firstItem="NHv-of-zwU" firstAttribute="trailing" secondItem="Vwa-NO-NPM" secondAttribute="trailing" id="d72-PI-1h4"/>
+                            <constraint firstItem="Vwa-NO-NPM" firstAttribute="width" secondItem="FLL-ta-edj" secondAttribute="width" id="gch-BF-jRB"/>
+                            <constraint firstItem="Vwa-NO-NPM" firstAttribute="centerX" secondItem="GXK-wq-9cT" secondAttribute="centerX" id="kFf-NS-vzk"/>
+                            <constraint firstItem="6Ah-Pn-Ge5" firstAttribute="leading" secondItem="FLL-ta-edj" secondAttribute="leading" id="kFr-fn-hlw"/>
+                            <constraint firstItem="tj1-Sy-VCI" firstAttribute="width" secondItem="NHv-of-zwU" secondAttribute="width" id="kaI-jm-ZpJ"/>
+                            <constraint firstItem="Vwa-NO-NPM" firstAttribute="top" secondItem="FLL-ta-edj" secondAttribute="bottom" constant="12" id="lgg-Kj-MHK"/>
+                            <constraint firstItem="ULO-de-ZLm" firstAttribute="top" secondItem="FLL-ta-edj" secondAttribute="bottom" constant="145" id="pP2-uj-Zne"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionText" destination="6Ah-Pn-Ge5" id="jc9-ex-m7h"/>
+                        <outlet property="detailBtn" destination="tj1-Sy-VCI" id="PDQ-6k-LiX"/>
+                        <outlet property="heroImageView" destination="FLL-ta-edj" id="dgN-XN-4Gv"/>
+                        <outlet property="nameLabel" destination="Vwa-NO-NPM" id="wcr-VP-50L"/>
+                        <outlet property="wikiBtn" destination="NHv-of-zwU" id="cEh-Qk-23a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjJ-dG-KXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2543.1999999999998" y="674.21289355322347"/>
+        </scene>
+        <!--Web View View Controller-->
+        <scene sceneID="bvJ-RU-IP8">
+            <objects>
+                <viewController storyboardIdentifier="WebView" id="ULb-Yd-DGV" customClass="JMHWebViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RFt-ol-O49"/>
+                        <viewControllerLayoutGuide type="bottom" id="IFP-cO-je6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gPM-f7-Rmh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3v-vI-m1J">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C3v-vI-m1J" firstAttribute="leading" secondItem="gPM-f7-Rmh" secondAttribute="leading" id="GCQ-pb-mvD"/>
+                            <constraint firstItem="C3v-vI-m1J" firstAttribute="top" secondItem="gPM-f7-Rmh" secondAttribute="top" id="PaN-ia-FAc"/>
+                            <constraint firstItem="IFP-cO-je6" firstAttribute="top" secondItem="C3v-vI-m1J" secondAttribute="bottom" id="ox3-6h-qVw"/>
+                            <constraint firstAttribute="trailing" secondItem="C3v-vI-m1J" secondAttribute="trailing" id="uEe-w1-uBw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="C3v-vI-m1J" id="1JN-JJ-0kJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uB1-dt-LOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3244" y="672.41379310344837"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tMU-LK-t6S">

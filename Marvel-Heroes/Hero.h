@@ -7,16 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Realm/Realm.h>
 
-@interface Hero : RLMObject
+@interface Hero : NSObject
 
-@property NSString *name;
-@property NSString *description;
-@property NSString *path;
-@property NSInteger id;
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSString *description;
+@property (nonatomic) NSString *path;
+@property (nonatomic) NSString *detailUrl;
+@property (nonatomic) NSString *wikiUrl;
 
-//Other way
--(void)initWithDict: (NSDictionary *)dict;
+//Init method
+-(id)initWithDict: (NSDictionary *)dict;
 
 @end

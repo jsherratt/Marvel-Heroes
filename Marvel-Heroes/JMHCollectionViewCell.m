@@ -22,7 +22,7 @@
 
 -(void)configureCellWithHero:(Hero *)hero {
     
-    NSString *url = [NSString stringWithFormat:@"%@/%@", hero.thumbnail[@"path"], @"standard_medium.jpg"];
+    NSString *url = [NSString stringWithFormat:@"%@/%@", hero.path, @"standard_medium.jpg"];
     
     [self.heroImageView hnk_setImageFromURL:[NSURL URLWithString:url]];
 }

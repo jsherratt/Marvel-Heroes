@@ -10,19 +10,34 @@
 
 @implementation Hero
 
-+(NSString *)primaryKey {
-    return @"id";
-}
+@synthesize description;
 
-//Other way
--(void)initWithDict:(NSDictionary *)dict{
+//Hero initializer
+-(id)initWithDict:(NSDictionary *)dict{
     
+    self = [super init];
+        
     self.name = [dict objectForKey:@"name"];
     self.description = [dict objectForKey:@"description"];
-    
+        
     NSDictionary *thumbnail = [dict objectForKey:@"thumbnail"];
     self.path = [thumbnail objectForKey:@"path"];
+    
+    NSArray *urlArray = [dict objectForKey:@"urls"];
+    
+    if ([[urlArray[0] objectForKey:@"url"] length] == 0) {
+        self.detailUrl = @"No detail url";
+    }else {
+        self.detailUrl = [urlArray[0] objectForKey:@"url"];
+    }
 
+    if ([[urlArray[1] objectForKey:@"url"] length] == 0) {
+        self.wikiUrl = @"No wiki url";
+    }else {
+        self.wikiUrl = [urlArray[1] objectForKey:@"url"];
+    }
+
+    return self;
 }
 
 @end

@@ -21,7 +21,7 @@ static NSString * const reuseIdentifier = @"MarvelHeroCell";
     [super viewDidLoad];
 
     //Customise collection view and navigation bar
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    //self.collectionView.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.topItem.title = @"Marvel Heroes";
     
     //Initialise hero manager
@@ -30,25 +30,11 @@ static NSString * const reuseIdentifier = @"MarvelHeroCell";
     //Set initial offset
     self.offset = 0;
     
+    self.heroes = [[NSMutableArray alloc] init];
+    
     
 #pragma mark <Fetch initial data>
-//    [self.manager fetchHeroesWithOffset:self.offset completion:^(RLMResults<Hero *> *heroArray, NSError *error) {
-//        
-//        if (error == nil) {
-//            
-//            self.heroes = heroArray;
-//            NSLog(@"Yay %@", heroArray);
-//            NSLog(@"Count %lu",heroArray.count);
-//            //self.offset += 20;
-//            [self.collectionView reloadData];
-//            
-//        } else {
-//            [self showAlertWithTitle:@"There was an error" andMessage:error.localizedDescription];
-//        }
-//        
-//    }];
-    
-    //Other way
+
     [self.manager fetchHeroesWithOffsett:self.offset completion:^(NSArray *heroArray, NSError *error) {
         
         if (error == nil) {
@@ -56,21 +42,54 @@ static NSString * const reuseIdentifier = @"MarvelHeroCell";
             for (NSDictionary *heroDict in heroArray){
                 
                 //Create hero from dict
-                //Hero *hero = [[Hero alloc] initWithDict:heroDict];
+                Hero *hero = [[Hero alloc] initWithDict:heroDict];
                 
                 //Add each hero to array
-                //[_heroes addObject:hero];
+                [_heroes addObject:hero];
             }
             
-            NSLog(@"Yay %@", heroArray);
-            NSLog(@"Count %lu",heroArray.count);
-            NSLog(@"First item in array %@",heroArray[0]);
-            [self.collectionView reloadData];
+            self.offset += 20;
+            [self reloadCollectionView];
             
         } else {
             [self showAlertWithTitle:@"There was an error" andMessage:error.localizedDescription];
         }
     }];
+    
+#pragma mark <Infinite scrolling>
+    
+    __weak typeof(self) weakSelf = self;
+    
+    [self.collectionView addInfiniteScrollingWithActionHandler:^{
+        __strong typeof(self) strongSelf = weakSelf;
+        
+        [strongSelf.manager fetchHeroesWithOffsett:strongSelf.offset completion:^(NSArray *heroArray, NSError *error) {
+            
+            if (error == nil) {
+                
+                for (NSDictionary *heroDict in heroArray){
+                    
+                    //Create hero from dict
+                    Hero *hero = [[Hero alloc] initWithDict:heroDict];
+                    
+                    //Add each hero to array
+                    [strongSelf.heroes addObject:hero];
+                }
+                
+                strongSelf.offset += 20;
+                [strongSelf.collectionView.infiniteScrollingView stopAnimating];
+                [strongSelf reloadCollectionView];
+                
+            } else {
+                [strongSelf showAlertWithTitle:@"There was an error" andMessage:error.localizedDescription];
+            }
+        }];
+    }];
+}
+
+-(void)reloadCollectionView {
+    
+    [self.collectionView reloadData];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -83,6 +102,9 @@ static NSString * const reuseIdentifier = @"MarvelHeroCell";
     
     JMHCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
+    cell.heroImageView.layer.cornerRadius = 2.5;
+    cell.heroImageView.clipsToBounds = YES;
+    
     // Configure the cell
     Hero *hero = self.heroes[indexPath.row];
     [cell configureCellWithHero:hero];
@@ -94,15 +116,11 @@ static NSString * const reuseIdentifier = @"MarvelHeroCell";
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    
+    JMHDetailViewController *detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailView"];
+     Hero *hero = self.heroes[indexPath.row];
+    detailView.hero = hero;
+    [self.navigationController pushViewController:detailView animated:true];
 }
-
-
- #pragma mark - Navigation
- 
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
- }
 
 #pragma mark <UIAlertController>
 

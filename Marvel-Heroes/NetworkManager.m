@@ -12,6 +12,7 @@
 
 #pragma mark <Request endpoint method>
 
+//Request enpoint method
 +(void)requestEndpoint:(NSString *)urlEndpointString completion:(void (^)(NSArray *, NSError *))completion {
     
     NSURL *url = [NSURL URLWithString:urlEndpointString];

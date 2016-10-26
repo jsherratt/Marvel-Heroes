@@ -7,17 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Hero.h"
 #import "HeroManager.h"
 #import "JMHCollectionViewCell.h"
-#import <Realm/Realm.h>
+#import "Haneke.h"
+#import "JMHDetailViewController.h"
 
 @interface JMHCollectionViewController : UICollectionViewController
 
 @property (nonatomic, strong) HeroManager *manager;
-//@property (nonatomic) RLMResults<Hero *> *heroes;
 @property (nonatomic) NSUInteger offset;
-
-//Other way
 @property (nonatomic) NSMutableArray *heroes;
 
 @end

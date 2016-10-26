@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5AFB8B6FA2F5B9FBD8FF63C1 /* libPods-Marvel-HeroesUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53BF8E36B3A189142A04CDC0 /* libPods-Marvel-HeroesUITests.a */; };
 		D16D6B743AFD02FF9AD0009E /* libPods-Marvel-HeroesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1081C0DB279530250909E72A /* libPods-Marvel-HeroesTests.a */; };
+		D4855E611DC14B5D00AACE10 /* JMHWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4855E601DC14B5D00AACE10 /* JMHWebViewViewController.m */; };
 		D498AF7B1DBFE32700ABF743 /* JMHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D498AF7A1DBFE32700ABF743 /* JMHCollectionViewCell.m */; };
 		D498AF7E1DBFE59100ABF743 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = D498AF7D1DBFE59100ABF743 /* Hero.m */; };
 		D498AF811DBFE70100ABF743 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D498AF801DBFE70100ABF743 /* NetworkManager.m */; };
@@ -21,6 +22,7 @@
 		D4AE87751DBEBF740018222B /* Marvel_HeroesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE87741DBEBF740018222B /* Marvel_HeroesTests.m */; };
 		D4AE87801DBEBF740018222B /* Marvel_HeroesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE877F1DBEBF740018222B /* Marvel_HeroesUITests.m */; };
 		D4AE87901DBEC2600018222B /* JMHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE878F1DBEC2600018222B /* JMHCollectionViewController.m */; };
+		D4EDB00A1DC11CB9001540DD /* JMHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EDB0091DC11CB9001540DD /* JMHDetailViewController.m */; };
 		FCF6F22F4923B3C2114CFC1B /* libPods-Marvel-Heroes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5E1BCE4DE34F115789C4D9 /* libPods-Marvel-Heroes.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		7A2A623972B114A388D22C85 /* Pods-Marvel-Heroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-Heroes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel-Heroes/Pods-Marvel-Heroes.debug.xcconfig"; sourceTree = "<group>"; };
 		AD35AFE64786C6C6ACD5574B /* Pods-Marvel-HeroesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-HeroesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel-HeroesTests/Pods-Marvel-HeroesTests.release.xcconfig"; sourceTree = "<group>"; };
 		BDD3501BA52875FA8E8CF338 /* Pods-Marvel-HeroesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-HeroesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel-HeroesTests/Pods-Marvel-HeroesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4855E5F1DC14B5D00AACE10 /* JMHWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHWebViewViewController.h; sourceTree = "<group>"; };
+		D4855E601DC14B5D00AACE10 /* JMHWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHWebViewViewController.m; sourceTree = "<group>"; };
 		D498AF791DBFE32700ABF743 /* JMHCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHCollectionViewCell.h; sourceTree = "<group>"; };
 		D498AF7A1DBFE32700ABF743 /* JMHCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHCollectionViewCell.m; sourceTree = "<group>"; };
 		D498AF7C1DBFE59100ABF743 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 		D4AE87811DBEBF740018222B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4AE878E1DBEC2600018222B /* JMHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHCollectionViewController.h; sourceTree = "<group>"; };
 		D4AE878F1DBEC2600018222B /* JMHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHCollectionViewController.m; sourceTree = "<group>"; };
+		D4EDB0081DC11CB9001540DD /* JMHDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHDetailViewController.h; sourceTree = "<group>"; };
+		D4EDB0091DC11CB9001540DD /* JMHDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHDetailViewController.m; sourceTree = "<group>"; };
 		DE3D3AC438DA77E568E8A392 /* Pods-Marvel-HeroesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-HeroesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel-HeroesUITests/Pods-Marvel-HeroesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F8545EE33746780427E1F786 /* Pods-Marvel-Heroes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-Heroes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel-Heroes/Pods-Marvel-Heroes.release.xcconfig"; sourceTree = "<group>"; };
 		FC5E1BCE4DE34F115789C4D9 /* libPods-Marvel-Heroes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marvel-Heroes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +163,10 @@
 				D4AE875E1DBEBF740018222B /* AppDelegate.m */,
 				D4AE878E1DBEC2600018222B /* JMHCollectionViewController.h */,
 				D4AE878F1DBEC2600018222B /* JMHCollectionViewController.m */,
+				D4EDB0081DC11CB9001540DD /* JMHDetailViewController.h */,
+				D4EDB0091DC11CB9001540DD /* JMHDetailViewController.m */,
+				D4855E5F1DC14B5D00AACE10 /* JMHWebViewViewController.h */,
+				D4855E601DC14B5D00AACE10 /* JMHWebViewViewController.m */,
 				D498AF791DBFE32700ABF743 /* JMHCollectionViewCell.h */,
 				D498AF7A1DBFE32700ABF743 /* JMHCollectionViewCell.m */,
 				D498AF7F1DBFE70100ABF743 /* NetworkManager.h */,
@@ -493,7 +503,9 @@
 				D498AF7B1DBFE32700ABF743 /* JMHCollectionViewCell.m in Sources */,
 				D4AE87901DBEC2600018222B /* JMHCollectionViewController.m in Sources */,
 				D498AF841DBFEA9000ABF743 /* HeroManager.m in Sources */,
+				D4855E611DC14B5D00AACE10 /* JMHWebViewViewController.m in Sources */,
 				D4AE875F1DBEBF740018222B /* AppDelegate.m in Sources */,
+				D4EDB00A1DC11CB9001540DD /* JMHDetailViewController.m in Sources */,
 				D498AF811DBFE70100ABF743 /* NetworkManager.m in Sources */,
 				D4AE875C1DBEBF740018222B /* main.m in Sources */,
 			);

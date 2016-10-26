@@ -46,7 +46,7 @@
 -(void)configureImageViewWithImage:(Hero *)hero {
     
     NSString *url = [NSString stringWithFormat:@"%@/%@", self.hero.path, @"portrait_uncanny.jpg"];
-    
+        
     //Fetch hero image from url path
     [self.heroImageView hnk_setImageFromURL:[NSURL URLWithString:url]];
 }

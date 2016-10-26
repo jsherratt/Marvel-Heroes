@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04A82C6E681F3AA2C70B966771B8BF95 /* HNKSimpleFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = FC4E7F713ABFF2F20D4702C4B0F27473 /* HNKSimpleFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06CD3A396D30A7CB47FF7D7D9BFAA1B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DD6646326C1F7B784B0A7051066015 /* Foundation.framework */; };
+		0A6CBF0777487D81759CBE849EC30025 /* HNKDiskFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 53AA988AFEA08316CA90C14216D3EB8A /* HNKDiskFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BEBA11F1B7D9FAC828D6ACF3442F71C /* UIImageView+Haneke.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA5172C7DFD297008A65D271B446E39 /* UIImageView+Haneke.m */; };
+		178A3AF5EEE07F3A9227AD53D818C38C /* HNKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7BE81420D7CDC8CD88B5E5AAB38F3F /* HNKCache.m */; };
+		227ED1532CC5C3F6AEB0A79149D85466 /* UIButton+Haneke.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE51A3A01F4A4976FABD7C1D94AFA9C /* UIButton+Haneke.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		298EF128BBF65B2A1B1035A893E22A68 /* Haneke-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DD1FAEEF4DB152720767ABC2BF515A /* Haneke-dummy.m */; };
+		348A46D8F0FEA24B64CD83DD2F8744BB /* HNKCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 495BE900FE68DC688EC6AB7C1811DCF5 /* HNKCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D497D77CA75C7ED1C93148751D62C6D /* Haneke.h in Headers */ = {isa = PBXBuildFile; fileRef = 9377DCB0FA4B9654C9E7B1A7B822BE09 /* Haneke.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4234B9D435D573EC4430642B082CBC9C /* HNKNetworkFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D35B33ED507F899E364F20FB1FA3834 /* HNKNetworkFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4288C1B73C8AF6C2FBA557FC26139285 /* UIImageView+Haneke.h in Headers */ = {isa = PBXBuildFile; fileRef = AEAF60977C457D08527C1E1173B80731 /* UIImageView+Haneke.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42AA2FA7DF3DA0A50EA7E643AC7D8163 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 064598256379D9E25C63F94AFB308323 /* UIScrollView+SVPullToRefresh.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4A8C99DABEF683FBD1AC300114263C64 /* UIButton+Haneke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1536B956EF756C3FFC670682930D05 /* UIButton+Haneke.m */; };
+		5620B64BA9CB92BC747591E76A7CDA82 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC7DB6C140BBDE30D8CE356AD66150 /* QuartzCore.framework */; };
+		7544D815E4DF68B6EDC419F6FBF94F8E /* HNKDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E8DA48AC2D97D1862EFB7050C8E5CB35 /* HNKDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		861170C4F65EA87CE90FEA5D1FC18D27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DD6646326C1F7B784B0A7051066015 /* Foundation.framework */; };
+		8D8EF0FCDCDD906A96A57B7CFE0514B2 /* SVPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 439784EE20A5742CB715B434C649E0F8 /* SVPullToRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		942765AB9F4F0799951EB005480513D0 /* UIScrollView+SVInfiniteScrolling.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D8701278A54A4B4158BA11EC5B23575 /* UIScrollView+SVInfiniteScrolling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B3E6290F2B6F7A5627A0FAA455F4701 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DD6646326C1F7B784B0A7051066015 /* Foundation.framework */; };
+		A9F05140A107F5DA1167A2F4CC8EC3A7 /* HNKNetworkFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F34CA304DC591EE99B02C5FCB66C62D /* HNKNetworkFetcher.m */; };
+		AE8F9D44E4D0B5E542DEBD196B23A48E /* UIView+Haneke.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E052F68C267A4F27E8463A795942A42 /* UIView+Haneke.m */; };
+		B258CBFA2C28CE9103F3E6DCC66E2F9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DD6646326C1F7B784B0A7051066015 /* Foundation.framework */; };
+		B31A4990968A0FE4A238D8AA073DC71B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813776E0503221E6909E0ED47AA47B8A /* ImageIO.framework */; };
+		B3A2F43704CA8C3EAE9B61DFF109FC0A /* HNKDiskFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F8DF8EAF6D9AD26465A34648CD139 /* HNKDiskFetcher.m */; };
+		CB77D977D135E487B756A7B6F1D769BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DD6646326C1F7B784B0A7051066015 /* Foundation.framework */; };
+		D990FFBCB150C414683CBC40A4FC298F /* HNKDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 889A2CCA3FE89B9C3D4C1F4EA6A55460 /* HNKDiskCache.m */; };
+		E8E7B1E5F7FAC2641AACCD57BC9F3649 /* UIScrollView+SVPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = F3EF7A970C735D80CEE6FD529B17D308 /* UIScrollView+SVPullToRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1AD827DEC8253E7263F571D13D0574A /* HNKSimpleFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 633CA2D70368B11B0A3F24DED705891A /* HNKSimpleFetcher.m */; };
+		F6F11AD302790B395C5230DDE8B51115 /* Pods-Marvel-HeroesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D47E93DB200D801C06240EB297FDD3EA /* Pods-Marvel-HeroesUITests-dummy.m */; };
+		FA59B50473A72ABD9085DBD803329364 /* UIView+Haneke.h in Headers */ = {isa = PBXBuildFile; fileRef = F7862DB16127208B813536C5ABF8F324 /* UIView+Haneke.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA6982E35419B4251E2A77E0874BECFA /* SVPullToRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B279B2723E92F298E92AD82CC8494494 /* SVPullToRefresh-dummy.m */; };
+		FD3840684497CC8467AC05C403FFA913 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = A41CDA7E71091413E5629FAB04B91A74 /* UIScrollView+SVInfiniteScrolling.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FDAF5873101E614F46C6BEFD1C203FE5 /* Pods-Marvel-HeroesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B832A5E03A1FDDF8E4F7E62E11C7A /* Pods-Marvel-HeroesTests-dummy.m */; };
+		FDF1A59FF1A1071BDEC1CE467135D142 /* Pods-Marvel-Heroes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8FC2910FF7CD3F59914B0445BE05E1 /* Pods-Marvel-Heroes-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23688C5E5B00E247F9D01952EB0F65FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42C9737EF5C3B2CF21DB20EABB904493;
+			remoteInfo = SVPullToRefresh;
+		};
+		4A409E4CC6CBE73BAD121C1DB36182A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E7D726ADA8D51194A8E9EDBDECCADF6;
+			remoteInfo = Haneke;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		064598256379D9E25C63F94AFB308323 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVPullToRefresh.m"; path = "SVPullToRefresh/UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		0DE51A3A01F4A4976FABD7C1D94AFA9C /* UIButton+Haneke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Haneke.h"; path = "Haneke/UIButton+Haneke.h"; sourceTree = "<group>"; };
+		134F8DF8EAF6D9AD26465A34648CD139 /* HNKDiskFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKDiskFetcher.m; path = Haneke/HNKDiskFetcher.m; sourceTree = "<group>"; };
+		1C8FC2910FF7CD3F59914B0445BE05E1 /* Pods-Marvel-Heroes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marvel-Heroes-dummy.m"; sourceTree = "<group>"; };
+		21397C973350AFCCBED3FF496C60EDB3 /* Haneke-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haneke-prefix.pch"; sourceTree = "<group>"; };
+		22DF573DFA19AAAB10F94B3070D98ABC /* Pods-Marvel-Heroes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Marvel-Heroes-acknowledgements.plist"; sourceTree = "<group>"; };
+		29F193E8FEBDB3D13733981001DB574E /* Pods-Marvel-HeroesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Marvel-HeroesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2F34CA304DC591EE99B02C5FCB66C62D /* HNKNetworkFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKNetworkFetcher.m; path = Haneke/HNKNetworkFetcher.m; sourceTree = "<group>"; };
+		31DD1FAEEF4DB152720767ABC2BF515A /* Haneke-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haneke-dummy.m"; sourceTree = "<group>"; };
+		3B154423433A600FE9639CDE18EC9D06 /* Pods-Marvel-Heroes-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marvel-Heroes-resources.sh"; sourceTree = "<group>"; };
+		3EF28AC1CE8B867EDCEF675D824C8C64 /* Pods-Marvel-HeroesUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marvel-HeroesUITests-frameworks.sh"; sourceTree = "<group>"; };
+		439784EE20A5742CB715B434C649E0F8 /* SVPullToRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVPullToRefresh.h; path = SVPullToRefresh/SVPullToRefresh.h; sourceTree = "<group>"; };
+		495BE900FE68DC688EC6AB7C1811DCF5 /* HNKCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKCache.h; path = Haneke/HNKCache.h; sourceTree = "<group>"; };
+		50504AD6613C8E8AFB44F134906F96D6 /* Pods-Marvel-HeroesTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marvel-HeroesTests-resources.sh"; sourceTree = "<group>"; };
+		53AA988AFEA08316CA90C14216D3EB8A /* HNKDiskFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKDiskFetcher.h; path = Haneke/HNKDiskFetcher.h; sourceTree = "<group>"; };
+		53BA49213358C205A9168DF286C926AD /* Pods-Marvel-HeroesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marvel-HeroesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		54D8CEAA808141C9BF007B05509F5466 /* Pods-Marvel-Heroes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Marvel-Heroes-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A657C1EF8FDF703D2676F1143790228 /* SVPullToRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVPullToRefresh.xcconfig; sourceTree = "<group>"; };
+		5E297F53D6AD9A511DA592738EB97271 /* libHaneke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHaneke.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6043A123F116B9F776EC82FD71DD73CF /* libPods-Marvel-HeroesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marvel-HeroesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		633CA2D70368B11B0A3F24DED705891A /* HNKSimpleFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKSimpleFetcher.m; path = Haneke/HNKSimpleFetcher.m; sourceTree = "<group>"; };
+		681B832A5E03A1FDDF8E4F7E62E11C7A /* Pods-Marvel-HeroesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marvel-HeroesTests-dummy.m"; sourceTree = "<group>"; };
+		7D0AB7E4D3100F88A2077B31BCFD4C99 /* Pods-Marvel-Heroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marvel-Heroes.debug.xcconfig"; sourceTree = "<group>"; };
+		7F1536B956EF756C3FFC670682930D05 /* UIButton+Haneke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Haneke.m"; path = "Haneke/UIButton+Haneke.m"; sourceTree = "<group>"; };
+		80DD6646326C1F7B784B0A7051066015 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		813776E0503221E6909E0ED47AA47B8A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		82FC7DB6C140BBDE30D8CE356AD66150 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		85FC0BDC5C42316B5C429FAC507D104D /* Pods-Marvel-HeroesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marvel-HeroesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		889A2CCA3FE89B9C3D4C1F4EA6A55460 /* HNKDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKDiskCache.m; path = Haneke/HNKDiskCache.m; sourceTree = "<group>"; };
+		8D8701278A54A4B4158BA11EC5B23575 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SVInfiniteScrolling.h"; path = "SVPullToRefresh/UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
+		9377DCB0FA4B9654C9E7B1A7B822BE09 /* Haneke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Haneke.h; path = Haneke/Haneke.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D35B33ED507F899E364F20FB1FA3834 /* HNKNetworkFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKNetworkFetcher.h; path = Haneke/HNKNetworkFetcher.h; sourceTree = "<group>"; };
+		9E052F68C267A4F27E8463A795942A42 /* UIView+Haneke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Haneke.m"; path = "Haneke/UIView+Haneke.m"; sourceTree = "<group>"; };
+		A41CDA7E71091413E5629FAB04B91A74 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVInfiniteScrolling.m"; path = "SVPullToRefresh/UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
+		A6BB138922C463A4F0388760C4D11E66 /* libPods-Marvel-Heroes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marvel-Heroes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9876F8C629E77EAB327EAE721D9FB4E /* Pods-Marvel-HeroesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Marvel-HeroesTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AC9D2DCDE4B5AA0BFFAB198B5D461740 /* SVPullToRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVPullToRefresh-prefix.pch"; sourceTree = "<group>"; };
+		AEA5172C7DFD297008A65D271B446E39 /* UIImageView+Haneke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+Haneke.m"; path = "Haneke/UIImageView+Haneke.m"; sourceTree = "<group>"; };
+		AEAF60977C457D08527C1E1173B80731 /* UIImageView+Haneke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Haneke.h"; path = "Haneke/UIImageView+Haneke.h"; sourceTree = "<group>"; };
+		B1FBD7FBF5A169DD12D17F4FDDF349AC /* Pods-Marvel-HeroesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marvel-HeroesTests.release.xcconfig"; sourceTree = "<group>"; };
+		B279B2723E92F298E92AD82CC8494494 /* SVPullToRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVPullToRefresh-dummy.m"; sourceTree = "<group>"; };
+		BCDA2CA3C8D1FD1B270DA38AEDB7A876 /* Pods-Marvel-HeroesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Marvel-HeroesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD52801BC76E66269A3A9A485A9E6467 /* libPods-Marvel-HeroesUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marvel-HeroesUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF78C86FFC65D069B8D2F969B6CF94DD /* Pods-Marvel-HeroesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Marvel-HeroesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CA3C7997FFAEB24884A7FE1761CDBF2F /* Pods-Marvel-HeroesTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marvel-HeroesTests-frameworks.sh"; sourceTree = "<group>"; };
+		CD7BE81420D7CDC8CD88B5E5AAB38F3F /* HNKCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HNKCache.m; path = Haneke/HNKCache.m; sourceTree = "<group>"; };
+		D3594AEABCBF8C7991F9C78BF45B8863 /* Pods-Marvel-Heroes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marvel-Heroes-frameworks.sh"; sourceTree = "<group>"; };
+		D47E93DB200D801C06240EB297FDD3EA /* Pods-Marvel-HeroesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marvel-HeroesUITests-dummy.m"; sourceTree = "<group>"; };
+		E03546F571D560A61AA9E2A4EF9DC082 /* Pods-Marvel-HeroesUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marvel-HeroesUITests-resources.sh"; sourceTree = "<group>"; };
+		E1839420E6659A5A2E7CD4D2FD80101F /* Pods-Marvel-Heroes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marvel-Heroes.release.xcconfig"; sourceTree = "<group>"; };
+		E8DA48AC2D97D1862EFB7050C8E5CB35 /* HNKDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKDiskCache.h; path = Haneke/HNKDiskCache.h; sourceTree = "<group>"; };
+		F3EF7A970C735D80CEE6FD529B17D308 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SVPullToRefresh.h"; path = "SVPullToRefresh/UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
+		F7862DB16127208B813536C5ABF8F324 /* UIView+Haneke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Haneke.h"; path = "Haneke/UIView+Haneke.h"; sourceTree = "<group>"; };
+		F7D8281D9902ED550624F6174E044FA4 /* libSVPullToRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVPullToRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9ABB37525E0AB4A65D700378445E66F /* Pods-Marvel-HeroesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marvel-HeroesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC1289D66E0BCF070C88F8BD1652701C /* Haneke.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haneke.xcconfig; sourceTree = "<group>"; };
+		FC4E7F713ABFF2F20D4702C4B0F27473 /* HNKSimpleFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HNKSimpleFetcher.h; path = Haneke/HNKSimpleFetcher.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11C95C3075DDFB053DBC1F792815771F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CD3A396D30A7CB47FF7D7D9BFAA1B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58771F2D5766935ED0B9E5DCAAEDBC3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3E6290F2B6F7A5627A0FAA455F4701 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF7E8DC6FA6F0CDC332665A2C653D2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB77D977D135E487B756A7B6F1D769BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0D8C2EE1C377D321DCD449193F1A18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861170C4F65EA87CE90FEA5D1FC18D27 /* Foundation.framework in Frameworks */,
+				5620B64BA9CB92BC747591E76A7CDA82 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0DF01DA99432CBF37DF39D7BEE322A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B258CBFA2C28CE9103F3E6DCC66E2F9E /* Foundation.framework in Frameworks */,
+				B31A4990968A0FE4A238D8AA073DC71B /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF796BB083BD6167893E79276C7D4FB7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		214E34728DF5F242AFA873ABEEBFD25F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63AD0A7DDDF6B9BF157341BBAC873465 /* Haneke */,
+				8448A762D41819D4D5F869809640E20D /* SVPullToRefresh */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		362E029E52CA8F6DDB4E643316EEE75A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A657C1EF8FDF703D2676F1143790228 /* SVPullToRefresh.xcconfig */,
+				B279B2723E92F298E92AD82CC8494494 /* SVPullToRefresh-dummy.m */,
+				AC9D2DCDE4B5AA0BFFAB198B5D461740 /* SVPullToRefresh-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVPullToRefresh";
+			sourceTree = "<group>";
+		};
+		63AD0A7DDDF6B9BF157341BBAC873465 /* Haneke */ = {
+			isa = PBXGroup;
+			children = (
+				9377DCB0FA4B9654C9E7B1A7B822BE09 /* Haneke.h */,
+				495BE900FE68DC688EC6AB7C1811DCF5 /* HNKCache.h */,
+				CD7BE81420D7CDC8CD88B5E5AAB38F3F /* HNKCache.m */,
+				E8DA48AC2D97D1862EFB7050C8E5CB35 /* HNKDiskCache.h */,
+				889A2CCA3FE89B9C3D4C1F4EA6A55460 /* HNKDiskCache.m */,
+				53AA988AFEA08316CA90C14216D3EB8A /* HNKDiskFetcher.h */,
+				134F8DF8EAF6D9AD26465A34648CD139 /* HNKDiskFetcher.m */,
+				9D35B33ED507F899E364F20FB1FA3834 /* HNKNetworkFetcher.h */,
+				2F34CA304DC591EE99B02C5FCB66C62D /* HNKNetworkFetcher.m */,
+				FC4E7F713ABFF2F20D4702C4B0F27473 /* HNKSimpleFetcher.h */,
+				633CA2D70368B11B0A3F24DED705891A /* HNKSimpleFetcher.m */,
+				0DE51A3A01F4A4976FABD7C1D94AFA9C /* UIButton+Haneke.h */,
+				7F1536B956EF756C3FFC670682930D05 /* UIButton+Haneke.m */,
+				AEAF60977C457D08527C1E1173B80731 /* UIImageView+Haneke.h */,
+				AEA5172C7DFD297008A65D271B446E39 /* UIImageView+Haneke.m */,
+				F7862DB16127208B813536C5ABF8F324 /* UIView+Haneke.h */,
+				9E052F68C267A4F27E8463A795942A42 /* UIView+Haneke.m */,
+				FC02E8A85291676B1AE6E9EDFC49A392 /* Support Files */,
+			);
+			path = Haneke;
+			sourceTree = "<group>";
+		};
+		7D1A2DC6A4B4586922273D0521973ACB /* Pods-Marvel-Heroes */ = {
+			isa = PBXGroup;
+			children = (
+				54D8CEAA808141C9BF007B05509F5466 /* Pods-Marvel-Heroes-acknowledgements.markdown */,
+				22DF573DFA19AAAB10F94B3070D98ABC /* Pods-Marvel-Heroes-acknowledgements.plist */,
+				1C8FC2910FF7CD3F59914B0445BE05E1 /* Pods-Marvel-Heroes-dummy.m */,
+				D3594AEABCBF8C7991F9C78BF45B8863 /* Pods-Marvel-Heroes-frameworks.sh */,
+				3B154423433A600FE9639CDE18EC9D06 /* Pods-Marvel-Heroes-resources.sh */,
+				7D0AB7E4D3100F88A2077B31BCFD4C99 /* Pods-Marvel-Heroes.debug.xcconfig */,
+				E1839420E6659A5A2E7CD4D2FD80101F /* Pods-Marvel-Heroes.release.xcconfig */,
+			);
+			name = "Pods-Marvel-Heroes";
+			path = "Target Support Files/Pods-Marvel-Heroes";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				214E34728DF5F242AFA873ABEEBFD25F /* Pods */,
+				D68E7FFE76F49244BDC991A74ED68115 /* Products */,
+				8DF47BDD9A7C35D26C53B89E3733147E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8448A762D41819D4D5F869809640E20D /* SVPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				439784EE20A5742CB715B434C649E0F8 /* SVPullToRefresh.h */,
+				8D8701278A54A4B4158BA11EC5B23575 /* UIScrollView+SVInfiniteScrolling.h */,
+				A41CDA7E71091413E5629FAB04B91A74 /* UIScrollView+SVInfiniteScrolling.m */,
+				F3EF7A970C735D80CEE6FD529B17D308 /* UIScrollView+SVPullToRefresh.h */,
+				064598256379D9E25C63F94AFB308323 /* UIScrollView+SVPullToRefresh.m */,
+				362E029E52CA8F6DDB4E643316EEE75A /* Support Files */,
+			);
+			path = SVPullToRefresh;
+			sourceTree = "<group>";
+		};
+		8DF47BDD9A7C35D26C53B89E3733147E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D1A2DC6A4B4586922273D0521973ACB /* Pods-Marvel-Heroes */,
+				D192FC0F4F791643906E62544DBAB29D /* Pods-Marvel-HeroesTests */,
+				BEB636204BF215876EE0EDD8AE5030F7 /* Pods-Marvel-HeroesUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BEB636204BF215876EE0EDD8AE5030F7 /* Pods-Marvel-HeroesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF78C86FFC65D069B8D2F969B6CF94DD /* Pods-Marvel-HeroesUITests-acknowledgements.markdown */,
+				BCDA2CA3C8D1FD1B270DA38AEDB7A876 /* Pods-Marvel-HeroesUITests-acknowledgements.plist */,
+				D47E93DB200D801C06240EB297FDD3EA /* Pods-Marvel-HeroesUITests-dummy.m */,
+				3EF28AC1CE8B867EDCEF675D824C8C64 /* Pods-Marvel-HeroesUITests-frameworks.sh */,
+				E03546F571D560A61AA9E2A4EF9DC082 /* Pods-Marvel-HeroesUITests-resources.sh */,
+				53BA49213358C205A9168DF286C926AD /* Pods-Marvel-HeroesUITests.debug.xcconfig */,
+				85FC0BDC5C42316B5C429FAC507D104D /* Pods-Marvel-HeroesUITests.release.xcconfig */,
+			);
+			name = "Pods-Marvel-HeroesUITests";
+			path = "Target Support Files/Pods-Marvel-HeroesUITests";
+			sourceTree = "<group>";
+		};
+		D192FC0F4F791643906E62544DBAB29D /* Pods-Marvel-HeroesTests */ = {
+			isa = PBXGroup;
+			children = (
+				29F193E8FEBDB3D13733981001DB574E /* Pods-Marvel-HeroesTests-acknowledgements.markdown */,
+				A9876F8C629E77EAB327EAE721D9FB4E /* Pods-Marvel-HeroesTests-acknowledgements.plist */,
+				681B832A5E03A1FDDF8E4F7E62E11C7A /* Pods-Marvel-HeroesTests-dummy.m */,
+				CA3C7997FFAEB24884A7FE1761CDBF2F /* Pods-Marvel-HeroesTests-frameworks.sh */,
+				50504AD6613C8E8AFB44F134906F96D6 /* Pods-Marvel-HeroesTests-resources.sh */,
+				F9ABB37525E0AB4A65D700378445E66F /* Pods-Marvel-HeroesTests.debug.xcconfig */,
+				B1FBD7FBF5A169DD12D17F4FDDF349AC /* Pods-Marvel-HeroesTests.release.xcconfig */,
+			);
+			name = "Pods-Marvel-HeroesTests";
+			path = "Target Support Files/Pods-Marvel-HeroesTests";
+			sourceTree = "<group>";
+		};
+		D68E7FFE76F49244BDC991A74ED68115 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E297F53D6AD9A511DA592738EB97271 /* libHaneke.a */,
+				A6BB138922C463A4F0388760C4D11E66 /* libPods-Marvel-Heroes.a */,
+				6043A123F116B9F776EC82FD71DD73CF /* libPods-Marvel-HeroesTests.a */,
+				BD52801BC76E66269A3A9A485A9E6467 /* libPods-Marvel-HeroesUITests.a */,
+				F7D8281D9902ED550624F6174E044FA4 /* libSVPullToRefresh.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF796BB083BD6167893E79276C7D4FB7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				80DD6646326C1F7B784B0A7051066015 /* Foundation.framework */,
+				813776E0503221E6909E0ED47AA47B8A /* ImageIO.framework */,
+				82FC7DB6C140BBDE30D8CE356AD66150 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FC02E8A85291676B1AE6E9EDFC49A392 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC1289D66E0BCF070C88F8BD1652701C /* Haneke.xcconfig */,
+				31DD1FAEEF4DB152720767ABC2BF515A /* Haneke-dummy.m */,
+				21397C973350AFCCBED3FF496C60EDB3 /* Haneke-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Haneke";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AEAEDC3D2781B01172D9792448B60F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D8EF0FCDCDD906A96A57B7CFE0514B2 /* SVPullToRefresh.h in Headers */,
+				942765AB9F4F0799951EB005480513D0 /* UIScrollView+SVInfiniteScrolling.h in Headers */,
+				E8E7B1E5F7FAC2641AACCD57BC9F3649 /* UIScrollView+SVPullToRefresh.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA7F9CBC67F7F8E341D611AE8624A84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D497D77CA75C7ED1C93148751D62C6D /* Haneke.h in Headers */,
+				348A46D8F0FEA24B64CD83DD2F8744BB /* HNKCache.h in Headers */,
+				7544D815E4DF68B6EDC419F6FBF94F8E /* HNKDiskCache.h in Headers */,
+				0A6CBF0777487D81759CBE849EC30025 /* HNKDiskFetcher.h in Headers */,
+				4234B9D435D573EC4430642B082CBC9C /* HNKNetworkFetcher.h in Headers */,
+				04A82C6E681F3AA2C70B966771B8BF95 /* HNKSimpleFetcher.h in Headers */,
+				227ED1532CC5C3F6AEB0A79149D85466 /* UIButton+Haneke.h in Headers */,
+				4288C1B73C8AF6C2FBA557FC26139285 /* UIImageView+Haneke.h in Headers */,
+				FA59B50473A72ABD9085DBD803329364 /* UIView+Haneke.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		42C9737EF5C3B2CF21DB20EABB904493 /* SVPullToRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B159AF7144B822946F2E7D8D0F26C5D2 /* Build configuration list for PBXNativeTarget "SVPullToRefresh" */;
+			buildPhases = (
+				0B69D5E1B09623D9F5065481107CD089 /* Sources */,
+				AA0D8C2EE1C377D321DCD449193F1A18 /* Frameworks */,
+				0AEAEDC3D2781B01172D9792448B60F1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVPullToRefresh;
+			productName = SVPullToRefresh;
+			productReference = F7D8281D9902ED550624F6174E044FA4 /* libSVPullToRefresh.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6E7D726ADA8D51194A8E9EDBDECCADF6 /* Haneke */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EA2B4B72D2CDDDA1B88F74471D6C193 /* Build configuration list for PBXNativeTarget "Haneke" */;
+			buildPhases = (
+				3ED35692F3B435B9A0BED05F2022A360 /* Sources */,
+				F0DF01DA99432CBF37DF39D7BEE322A8 /* Frameworks */,
+				ADA7F9CBC67F7F8E341D611AE8624A84 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Haneke;
+			productName = Haneke;
+			productReference = 5E297F53D6AD9A511DA592738EB97271 /* libHaneke.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9210C1D72EAADE813912413B436DFC77 /* Pods-Marvel-Heroes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5242275414908E9295CE0393C7DF7F /* Build configuration list for PBXNativeTarget "Pods-Marvel-Heroes" */;
+			buildPhases = (
+				0583C593AF211BE0B76D364E75091054 /* Sources */,
+				58771F2D5766935ED0B9E5DCAAEDBC3E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6756343A1A23AD0B18A7C089448EF8C5 /* PBXTargetDependency */,
+				17E7229F40913031D3B13E9AEC040F2D /* PBXTargetDependency */,
+			);
+			name = "Pods-Marvel-Heroes";
+			productName = "Pods-Marvel-Heroes";
+			productReference = A6BB138922C463A4F0388760C4D11E66 /* libPods-Marvel-Heroes.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AAFABB50549073DE8E3595ABE7D74DD6 /* Pods-Marvel-HeroesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5490529985A5EECCE6DA9B283F3D999B /* Build configuration list for PBXNativeTarget "Pods-Marvel-HeroesUITests" */;
+			buildPhases = (
+				BEAA94DB254BE416AE20B1131FE68437 /* Sources */,
+				8FF7E8DC6FA6F0CDC332665A2C653D2A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Marvel-HeroesUITests";
+			productName = "Pods-Marvel-HeroesUITests";
+			productReference = BD52801BC76E66269A3A9A485A9E6467 /* libPods-Marvel-HeroesUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BA98B25230FBA925962386FFD2328971 /* Pods-Marvel-HeroesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05170376E0165E154ECE58216F6116AB /* Build configuration list for PBXNativeTarget "Pods-Marvel-HeroesTests" */;
+			buildPhases = (
+				D1A7139A668AEC08FCF025060BCA31E8 /* Sources */,
+				11C95C3075DDFB053DBC1F792815771F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Marvel-HeroesTests";
+			productName = "Pods-Marvel-HeroesTests";
+			productReference = 6043A123F116B9F776EC82FD71DD73CF /* libPods-Marvel-HeroesTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D68E7FFE76F49244BDC991A74ED68115 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E7D726ADA8D51194A8E9EDBDECCADF6 /* Haneke */,
+				9210C1D72EAADE813912413B436DFC77 /* Pods-Marvel-Heroes */,
+				BA98B25230FBA925962386FFD2328971 /* Pods-Marvel-HeroesTests */,
+				AAFABB50549073DE8E3595ABE7D74DD6 /* Pods-Marvel-HeroesUITests */,
+				42C9737EF5C3B2CF21DB20EABB904493 /* SVPullToRefresh */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0583C593AF211BE0B76D364E75091054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF1A59FF1A1071BDEC1CE467135D142 /* Pods-Marvel-Heroes-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B69D5E1B09623D9F5065481107CD089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6982E35419B4251E2A77E0874BECFA /* SVPullToRefresh-dummy.m in Sources */,
+				FD3840684497CC8467AC05C403FFA913 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
+				42AA2FA7DF3DA0A50EA7E643AC7D8163 /* UIScrollView+SVPullToRefresh.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED35692F3B435B9A0BED05F2022A360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298EF128BBF65B2A1B1035A893E22A68 /* Haneke-dummy.m in Sources */,
+				178A3AF5EEE07F3A9227AD53D818C38C /* HNKCache.m in Sources */,
+				D990FFBCB150C414683CBC40A4FC298F /* HNKDiskCache.m in Sources */,
+				B3A2F43704CA8C3EAE9B61DFF109FC0A /* HNKDiskFetcher.m in Sources */,
+				A9F05140A107F5DA1167A2F4CC8EC3A7 /* HNKNetworkFetcher.m in Sources */,
+				F1AD827DEC8253E7263F571D13D0574A /* HNKSimpleFetcher.m in Sources */,
+				4A8C99DABEF683FBD1AC300114263C64 /* UIButton+Haneke.m in Sources */,
+				0BEBA11F1B7D9FAC828D6ACF3442F71C /* UIImageView+Haneke.m in Sources */,
+				AE8F9D44E4D0B5E542DEBD196B23A48E /* UIView+Haneke.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAA94DB254BE416AE20B1131FE68437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6F11AD302790B395C5230DDE8B51115 /* Pods-Marvel-HeroesUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1A7139A668AEC08FCF025060BCA31E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAF5873101E614F46C6BEFD1C203FE5 /* Pods-Marvel-HeroesTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17E7229F40913031D3B13E9AEC040F2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVPullToRefresh;
+			target = 42C9737EF5C3B2CF21DB20EABB904493 /* SVPullToRefresh */;
+			targetProxy = 23688C5E5B00E247F9D01952EB0F65FD /* PBXContainerItemProxy */;
+		};
+		6756343A1A23AD0B18A7C089448EF8C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Haneke;
+			target = 6E7D726ADA8D51194A8E9EDBDECCADF6 /* Haneke */;
+			targetProxy = 4A409E4CC6CBE73BAD121C1DB36182A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		123371E81DE080A02131162C75C269C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC1289D66E0BCF070C88F8BD1652701C /* Haneke.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Haneke/Haneke-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3D1AB140E908888E8FA34CD5E51F595E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1FBD7FBF5A169DD12D17F4FDDF349AC /* Pods-Marvel-HeroesTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		537F414BDA31891C4F98A32B81189943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D0AB7E4D3100F88A2077B31BCFD4C99 /* Pods-Marvel-Heroes.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		76C770154D00ABF7F21C09959B9DE213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9ABB37525E0AB4A65D700378445E66F /* Pods-Marvel-HeroesTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9527A2F8C459D76742C8974F6993A5D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1839420E6659A5A2E7CD4D2FD80101F /* Pods-Marvel-Heroes.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9D7B35D8BB6D7D20D0787F5F180E481C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A657C1EF8FDF703D2676F1143790228 /* SVPullToRefresh.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVPullToRefresh/SVPullToRefresh-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AC295850AFD1662A2B2F228575698668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A657C1EF8FDF703D2676F1143790228 /* SVPullToRefresh.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVPullToRefresh/SVPullToRefresh-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CCB06F1F59E78204CBE715A40C89D083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC1289D66E0BCF070C88F8BD1652701C /* Haneke.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Haneke/Haneke-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E6A687C5F49DF01738EBE0985EE1748D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85FC0BDC5C42316B5C429FAC507D104D /* Pods-Marvel-HeroesUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE964EBDFB6D01B797C8FB23548E7BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53BA49213358C205A9168DF286C926AD /* Pods-Marvel-HeroesUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05170376E0165E154ECE58216F6116AB /* Build configuration list for PBXNativeTarget "Pods-Marvel-HeroesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76C770154D00ABF7F21C09959B9DE213 /* Debug */,
+				3D1AB140E908888E8FA34CD5E51F595E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EA2B4B72D2CDDDA1B88F74471D6C193 /* Build configuration list for PBXNativeTarget "Haneke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB06F1F59E78204CBE715A40C89D083 /* Debug */,
+				123371E81DE080A02131162C75C269C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5490529985A5EECCE6DA9B283F3D999B /* Build configuration list for PBXNativeTarget "Pods-Marvel-HeroesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE964EBDFB6D01B797C8FB23548E7BDE /* Debug */,
+				E6A687C5F49DF01738EBE0985EE1748D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF5242275414908E9295CE0393C7DF7F /* Build configuration list for PBXNativeTarget "Pods-Marvel-Heroes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537F414BDA31891C4F98A32B81189943 /* Debug */,
+				9527A2F8C459D76742C8974F6993A5D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B159AF7144B822946F2E7D8D0F26C5D2 /* Build configuration list for PBXNativeTarget "SVPullToRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC295850AFD1662A2B2F228575698668 /* Debug */,
+				9D7B35D8BB6D7D20D0787F5F180E481C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
